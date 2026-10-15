@@ -1,5 +1,5 @@
 // Small fetch wrapper (async/await) that attaches the JWT automatically.
-const BASE = "/api";
+const BASE = "https://imovies-movie-ticket-booking.onrender.com/api";
 
 export async function api(path, { method = "GET", body } = {}) {
   const token = localStorage.getItem("token");
